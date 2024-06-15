@@ -10,12 +10,12 @@
 <style>
     :root {
         font-size: 16px;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans', serif;
         --text-primary: #b6b6b6;
         --text-secondary: #ececec;
         --bg-primary: #23232e;
         --bg-secondary: #141418;
-        --transition-speed: 600ms;
+        --transition-speed: 200ms;
     }
 
     body {
@@ -45,7 +45,7 @@
     .navbar {
         position: fixed;
         background-color: var(--bg-primary);
-        transition: width 600ms ease;
+        transition: width 200ms ease;
         overflow: scroll;
     }
 
@@ -94,18 +94,7 @@
         margin: 0 1.5rem;
     }
 
-    .fa-primary {
-        color: #ff7eee;
-    }
 
-    .fa-secondary {
-        color: #df49a6;
-    }
-
-    .fa-primary,
-    .fa-secondary {
-        transition: var(--transition-speed);
-    }
 
     .logo {
         font-weight: bold;
@@ -229,50 +218,49 @@
 <nav class="navbar">
     <ul class="navbar-nav">
         <li class="logo">
-            <a href="#" class="nav-link">
-                <span class="link-text logo-text">Fireship</span>
-                <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fad"
-                    data-icon="angle-double-right"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
-                >
-                    <g class="fa-group">
-                        <path
-                            fill="currentColor"
-                            d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                            class="fa-secondary"
-                        ></path>
-                        <path
-                            fill="currentColor"
-                            d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                            class="fa-primary"
-                        ></path>
-                    </g>
-                </svg>
+            <a href="/dashboard" class="nav-link">
+                <span class="link-text logo-text">Home</span>
+{{--                <svg--}}
+{{--                    aria-hidden="true"--}}
+{{--                    focusable="false"--}}
+{{--                    data-prefix="fad"--}}
+{{--                    data-icon="angle-double-right"--}}
+{{--                    role="img"--}}
+{{--                    xmlns="http://www.w3.org/2000/svg"--}}
+{{--                    viewBox="0 0 448 512"--}}
+{{--                    class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"--}}
+{{--                >--}}
+{{--                    <g class="fa-group">--}}
+{{--                        <path--}}
+{{--                            fill="currentColor"--}}
+{{--                            d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"--}}
+{{--                            class="fa-secondary"--}}
+{{--                        ></path>--}}
+{{--                        <path--}}
+{{--                            fill="currentColor"--}}
+{{--                            d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"--}}
+{{--                            class="fa-primary"--}}
+{{--                        ></path>--}}
+{{--                    </g>--}}
+{{--                </svg>--}}
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/topics/oop" class="nav-link">
                 <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fad"
-                    data-icon="cat"
+                    data-icon="server"
                     role="img"
-                    xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
-                    class="svg-inline--fa fa-cat fa-w-16 fa-9x"
                 >
                     <g class="fa-group">
                         <path
                             fill="currentColor"
-                            d="M448 96h-64l-64-64v134.4a96 96 0 0 0 192 0V32zm-72 80a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm80 0a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm-165.41 16a204.07 204.07 0 0 0-34.59 2.89V272l-43.15-64.73a183.93 183.93 0 0 0-44.37 26.17L192 304l-60.94-30.47L128 272v-80a96.1 96.1 0 0 0-96-96 32 32 0 0 0 0 64 32 32 0 0 1 32 32v256a64.06 64.06 0 0 0 64 64h176a16 16 0 0 0 16-16v-16a32 32 0 0 0-32-32h-32l128-96v144a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16V289.86a126.78 126.78 0 0 1-32 4.54c-61.81 0-113.52-44.05-125.41-102.4z"
+                            d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
                             class="fa-secondary"
                         ></path>
                         <path
@@ -282,7 +270,8 @@
                         ></path>
                     </g>
                 </svg>
-                <span class="link-text">Cats</span>
+
+                <span class="link-text">OOP</span>
             </a>
         </li>
 
