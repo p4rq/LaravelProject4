@@ -1,7 +1,7 @@
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script defer src="theme.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
         rel="stylesheet"
@@ -95,7 +95,6 @@
     }
 
 
-
     .logo {
         font-weight: bold;
         text-transform: uppercase;
@@ -113,8 +112,7 @@
         transition: var(--transition-speed);
     }
 
-    .logo-text
-    {
+    .logo-text {
         display: inline;
         position: absolute;
         left: -999px;
@@ -166,13 +164,11 @@
             display: inline;
         }
 
-        .navbar:hover .logo svg
-        {
+        .navbar:hover .logo svg {
             margin-left: 11rem;
         }
 
-        .navbar:hover .logo-text
-        {
+        .navbar:hover .logo-text {
             left: 0px;
         }
     }
@@ -213,6 +209,23 @@
     .solar #solarIcon {
         display: block;
     }
+    .list-container {
+        text-align: center; /* Выравниваем текст по центру */
+    }
+
+    .custom-list {
+        list-style-type: disc; /* Устанавливаем точки в качестве маркеров списка */
+        padding-left: 20px; /* Отступ слева для списка */
+    }
+
+    .custom-list li {
+        margin-bottom: 10px; /* Отступ между элементами списка */
+        text-align: left; /* Выравниваем текст элементов списка по левому краю */
+    }
+    .text {
+        text-indent: 30px
+    }
+
 </style>
 <body>
 <nav class="navbar">
@@ -220,29 +233,29 @@
         <li class="logo">
             <a href="/dashboard" class="nav-link">
                 <span class="link-text logo-text">Home</span>
-{{--                <svg--}}
-{{--                    aria-hidden="true"--}}
-{{--                    focusable="false"--}}
-{{--                    data-prefix="fad"--}}
-{{--                    data-icon="angle-double-right"--}}
-{{--                    role="img"--}}
-{{--                    xmlns="http://www.w3.org/2000/svg"--}}
-{{--                    viewBox="0 0 448 512"--}}
-{{--                    class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"--}}
-{{--                >--}}
-{{--                    <g class="fa-group">--}}
-{{--                        <path--}}
-{{--                            fill="currentColor"--}}
-{{--                            d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"--}}
-{{--                            class="fa-secondary"--}}
-{{--                        ></path>--}}
-{{--                        <path--}}
-{{--                            fill="currentColor"--}}
-{{--                            d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"--}}
-{{--                            class="fa-primary"--}}
-{{--                        ></path>--}}
-{{--                    </g>--}}
-{{--                </svg>--}}
+                {{--                <svg--}}
+                {{--                    aria-hidden="true"--}}
+                {{--                    focusable="false"--}}
+                {{--                    data-prefix="fad"--}}
+                {{--                    data-icon="angle-double-right"--}}
+                {{--                    role="img"--}}
+                {{--                    xmlns="http://www.w3.org/2000/svg"--}}
+                {{--                    viewBox="0 0 448 512"--}}
+                {{--                    class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"--}}
+                {{--                >--}}
+                {{--                    <g class="fa-group">--}}
+                {{--                        <path--}}
+                {{--                            fill="currentColor"--}}
+                {{--                            d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"--}}
+                {{--                            class="fa-secondary"--}}
+                {{--                        ></path>--}}
+                {{--                        <path--}}
+                {{--                            fill="currentColor"--}}
+                {{--                            d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"--}}
+                {{--                            class="fa-primary"--}}
+                {{--                        ></path>--}}
+                {{--                    </g>--}}
+                {{--                </svg>--}}
             </a>
         </li>
 
@@ -443,58 +456,41 @@
 </nav>
 
 <main>
-    <h1>CSS is Cool</h1>
+    <h2>Понятие ООП</h2>
 
-    <p>
-        I'm baby kale chips affogato ennui lumbersexual, williamsburg paleo quinoa
-        iceland normcore tumeric. Kitsch coloring book retro, seitan schlitz
-        tattooed biodiesel vexillologist neutra. Synth mumblecore deep v, umami
-        selfies normcore gluten-free snackwave. Seitan ramps drinking vinegar
-        venmo keytar, humblebrag VHS post-ironic tacos godard pour-over.
+    <p class="text"><strong>Объектно-ориентированное программирование (ООП)</strong> — это методология программирования, основанная
+        на представлении программы в виде совокупности объектов, каждый из которых является экземпляром определенного
+        класса, а классы образуют иерархию наследования.</p>
+
+    <h2>Основные принципы ООП</h2>
+
+    <div class="list-container">
+        <ol class="custom-list">
+            <li><strong>Инкапсуляция</strong> — это механизм, который связывает код и данные внутри класса, скрывая детали реализации от пользователя. Инкапсуляция позволяет создавать классы, которые могут быть использованы без знания внутренней реализации.</li>
+            <li><strong>Наследование</strong> — свойство системы, позволяющее описать новый класс на основе уже существующего с частично или полностью заимствующейся функциональностью. Класс, от которого производится наследование, называется базовым, родительским или суперклассом. Новый класс — потомком, наследником, дочерним или производным классом.</li>
+            <li><strong>Полиморфизм</strong> — это механизм, который позволяет использовать объекты с одинаковым интерфейсом без информации о конкретной реализации.</li>
+            <li><strong>Абстракция</strong> — это способ выделить набор значимых характеристик объекта, исключая из рассмотрения незначимые.</li>
+            <li><strong>Класс</strong> — это шаблон, по которому создаются объекты. Класс определяет состояние и поведение объектов, которые являются экземплярами класса.</li>
+            <li><strong>Объект</strong> — это экземпляр класса, который обладает состоянием и поведением, описанным в классе.</li>
+        </ol>
+    </div>
+
+
+    <h2>SOLID</h2>
+
+    <p class="text">
+        SOLID — это аббревиатура, которая описывает пять основных принципов объектно-ориентированного программирования и дизайна. SOLID помогает разработчикам создавать гибкие, расширяемые и поддерживаемые программы.
     </p>
-    <p>
-        Sartorial kogi taxidermy, kickstarter synth yr irony ennui everyday carry
-        retro helvetica stumptown cloud bread squid echo park. Etsy cloud bread
-        sartorial quinoa tacos beard mumblecore shaman tumblr pop-up. Twee retro
-        fingerstache af helvetica pabst 8-bit leggings taiyaki portland ramps tbh
-        tumblr vinyl. Neutra humblebrag bushwick portland subway tile plaid, offal
-        scenester flexitarian cliche squid small batch palo santo. Palo santo meh
-        adaptogen +1 3 wolf moon, listicle brunch ethical fanny pack everyday
-        carry fam. Offal fingerstache taxidermy, man bun venmo PBR&amp;B helvetica
-        thundercats everyday carry tote bag artisan cray wolf jianbing.
-    </p>
-    <p>
-        Taxidermy thundercats whatever austin. VHS helvetica ethical, dreamcatcher
-        enamel pin YOLO shabby chic locavore man bun crucifix pabst chillwave
-        pop-up vegan. Air plant mlkshk ethical echo park tumeric, whatever
-        crucifix godard scenester locavore pork belly yuccie vape. +1 gochujang
-        put a bird on it, pork belly whatever selfies vaporware occupy banh mi
-        normcore VHS. Cornhole normcore hashtag tilde. Hell of yr try-hard DIY raw
-        denim banjo, enamel pin irony polaroid copper mug tofu. Dreamcatcher lomo
-        literally 90's before they sold out, 3 wolf moon banh mi seitan chambray
-        cliche offal tote bag occupy pug.
-    </p>
-    <p>
-        Post-ironic hot chicken salvia yr yuccie ugh cold-pressed keffiyeh franzen
-        viral taxidermy mustache slow-carb crucifix vape. Taiyaki yuccie hell of
-        tacos PBR&amp;B, kitsch meggings tbh truffaut kickstarter mixtape af kogi.
-        Fingerstache vegan tofu waistcoat gentrify cray. Drinking vinegar 3 wolf
-        moon health goth craft beer master cleanse. Letterpress health goth 8-bit
-        chillwave craft beer brooklyn. Chicharrones master cleanse 8-bit,
-        mumblecore copper mug messenger bag poutine lomo kale chips flannel. Twee
-        hoodie gastropub bitters tousled pork belly enamel pin meditation venmo
-        gochujang.
-    </p>
-    <p>
-        Next level selfies cronut ethical. Tofu tumblr you probably haven't heard
-        of them, man braid literally forage swag chillwave. Pug yr flannel
-        tumeric. Coloring book yr chillwave snackwave, shoreditch shaman gentrify
-        typewriter tumeric DIY copper mug small batch. Scenester waistcoat YOLO
-        hexagon kombucha poke 8-bit meditation. Selvage scenester forage
-        williamsburg. Hoodie fingerstache tacos mustache, hashtag quinoa next
-        level sartorial craft beer retro disrupt lo-fi.
-    </p>
-    <p>
+    <div class="list-container">
+        <ol class="custom-list">
+            <li><strong>Single responsibility principle</strong>, принцип единственной обязанности, обозначает, что каждый объект должен иметь одну обязанность и эта обязанность должна быть полностью инкапсулирована в класс. Все его сервисы должны быть направлены исключительно на обеспечение этой обязанности.</li>
+            <li><strong>Open-closed principle</strong>, принцип открытости-закрытости устанавливает следующее положение: программные сущности должны быть открыты для расширения, но закрыты для изменения. Существующий класс может быть изменён только для исправления ошибок, при изменении логики необходимо писать новый класс, который может наследоваться от первого.</li>
+            <li><strong>Liskov substitution principle</strong>, принцип подстановки Барбары Лисков: «Функции, которые используют базовый тип, должны иметь возможность использовать подтипы базового типа, не зная об этом.» Если есть класс A и отнаследованный от него класс B, если заменить все использования класса A на B, ничего не должно измениться в работе программы. Класс B должен лишь расширять функционал класса A.</li>
+            <li><strong>Interface segregation principle</strong>, принцип разделения интерфейса говорит о том, что слишком «толстые» интерфейсы необходимо разделять на более маленькие и специфические, чтобы клиенты маленьких интерфейсов знали только о методах, которые необходимы им в работе.</li>
+            <li><strong>Dependency inversion principle</strong>, принцип инверсии зависимостей устанавливает правило, абстракции не должны зависеть от деталей, а детали должны зависеть от абстракций. Проще говоря, следует избавляться от композиции, заменяя её на агрегацию.</li>
+        </ol>
+    </div>
+    <p class="text">
         YOLO twee keytar farm-to-table flexitarian cardigan polaroid lumbersexual
         adaptogen drinking vinegar echo park dreamcatcher. Brunch shoreditch
         dreamcatcher iPhone knausgaard plaid edison bulb letterpress ethical yr
@@ -502,7 +498,7 @@
         gentrify letterpress cray brunch lyft 8-bit master cleanse. Pitchfork
         thundercats organic pour-over unicorn lomo.
     </p>
-    <p>
+    <p class="text">
         Ugh yr tacos aesthetic everyday carry, tumeric selvage cliche skateboard.
         Wolf truffaut enamel pin vexillologist poutine. Hoodie roof party pabst,
         cardigan letterpress af disrupt +1 subway tile chillwave live-edge
