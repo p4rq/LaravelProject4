@@ -23,4 +23,10 @@ Route::get('/login/github/redirect', [LoginController::class, 'githubRedirect'])
 Route::get('/login/google', [LoginController::class, 'google']);
 Route::get('/login/google/redirect', [LoginController::class, 'googleRedirect']);
 Route::get('/topics', [TopicController::class, 'index'])->name('topics.index');
-Route::get('/topics/oop', [OOPTopicController::class, 'index'])->name('topics.oop');
+//Route::get('/topics/oop', [OOPTopicController::class, 'index'])->name('topics.oop');
+Route::get('/topics/{id}/solid', [OOPTopicController::class, 'solid'])->name('topics.solid');
+Route::get('/topics/{id}/aggregation', [OOPTopicController::class, 'aggregation'])->name('topics.aggregation');
+Route::get('/topics/{id}/demetra', [OOPTopicController::class, 'demetra'])->name('topics.demetra');
+Route::get('/topics/{id}/polymorphism', [OOPTopicController::class, 'polymorphism'])->name('topics.polymorphism');
+//Route::get('/topics/oop/srp', [OOPTopicController::class, 'srp'])->name('topics.srp');
+Route::get('/topics/{id}', [TopicController::class, 'show'])->name('topics.show');

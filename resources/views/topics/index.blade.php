@@ -33,14 +33,17 @@
                         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
                             Краткий список тем, которые могут встретиться на собеседовании:
                         <ol class="mt-2 list-decimal list-inside text-gray-600">
-                            <li><a href="{{route('topics.oop')}}" class="text-gray-700 hover:underline">Объектно-ориентированное программирование</a></li>
-                            <li><a href="#" class="text-gray-700 hover:underline">Базы данных и SQL</a></li>
-                            <li><a href="#" class="text-gray-700 hover:underline">Алгоритмы и структуры данных</a></li>
-                            <li><a href="#" class="text-gray-700 hover:underline">Фреймворк Laravel</a></li>
-                            <li><a href="#" class="text-gray-700 hover:underline">Системы контроля версий (Git)</a></li>
-                            <li><a href="#" class="text-gray-700 hover:underline">Архитектура приложений</a></li>
-                            <li><a href="#" class="text-gray-700 hover:underline">Тестирование и отладка</a></li>
-                            <li><a href="#" class="text-gray-700 hover:underline">Паттерны проектирования</a></li>
+                            @foreach($mainTopics as $mainTopic)
+                                <li><a href="{{route('topics.show', $mainTopic->id)}}" class="text-gray-700 hover:underline">{{$mainTopic->name}}</a></li>
+                            @endforeach
+{{--                            <li><a href="{{route('topics.oop')}}" class="text-gray-700 hover:underline">Объектно-ориентированное программирование</a></li>--}}
+{{--                            <li><a href="#" class="text-gray-700 hover:underline">Базы данных и SQL</a></li>--}}
+{{--                            <li><a href="#" class="text-gray-700 hover:underline">Алгоритмы и структуры данных</a></li>--}}
+{{--                            <li><a href="#" class="text-gray-700 hover:underline">Фреймворк Laravel</a></li>--}}
+{{--                            <li><a href="#" class="text-gray-700 hover:underline">Системы контроля версий (Git)</a></li>--}}
+{{--                            <li><a href="#" class="text-gray-700 hover:underline">Архитектура приложений</a></li>--}}
+{{--                            <li><a href="#" class="text-gray-700 hover:underline">Тестирование и отладка</a></li>--}}
+{{--                            <li><a href="#" class="text-gray-700 hover:underline">Паттерны проектирования</a></li>--}}
                         </ol>
                         </p>
 
